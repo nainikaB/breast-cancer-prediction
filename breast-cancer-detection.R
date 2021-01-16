@@ -26,7 +26,7 @@ summary(breast_cancer_detection)
 bc_detection <- breast_cancer_detection
 bc_detection
 
-# linear regression models 
+# logistic regression models 
 
 # model 1 
 
@@ -49,7 +49,7 @@ subset(bc_detection, split_index == F)-> test
 
 
 
-# linear model for train data 
+# logistic model for train data 
 
 train_data = glm(diagnosis ~ . , train, family = binomial)
 summary(train_data) # AIC is 121.98 
